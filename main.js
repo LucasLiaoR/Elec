@@ -1,5 +1,5 @@
 const { app, BrowserWindow, shell, autoUpdater, dialog } = require('electron')
-const server = "https://ghjkl-hyf8hp16e-lucasliaor.vercel.app"
+const server = "https://fghjkl-cktffnjv7-lucasliaor.vercel.app"
 const url = `${server}/update/${process.platform}/${app.getVersion()}`
 const path = require('path')
 
@@ -59,7 +59,7 @@ autoUpdater.setFeedURL({ url });
 setInterval(() => {
   console.log('sserach')
   autoUpdater.checkForUpdates();
-}, 50000)
+}, 10000)
 
 
 autoUpdater.on('update-downloaded', (event, releaseNotes, releaseName) => {
