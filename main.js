@@ -1,7 +1,9 @@
 const { app, BrowserWindow, shell, autoUpdater, dialog } = require('electron')
 const server = "https://fghjkl-cktffnjv7-lucasliaor.vercel.app"
-const url = `${server}/update/${process.platform}/${app.getVersion()}`
+const url = `${server}/update/${process.platform}/v2`
 const path = require('path')
+
+console.log(url)
 
 // Custom protocol registering (File open with url)
 if (process.defaultApp) {
